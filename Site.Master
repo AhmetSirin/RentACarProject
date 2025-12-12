@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RentACarApp.Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - RentACar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="Styles\CarLogo.jpg" alt="RentACar Logo" width="120"></a>
+    <span class="navbar-text mx-2"><h2>Rent A Car İstanbul</h2></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Home.aspx">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Cars.aspx">Cars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AddCar.aspx">Add Car</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Rental.aspx">Rental</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            </header>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </form>
+</body>
+</html>
